@@ -59,7 +59,7 @@
       <file leaf-file-name="playerService.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Services/player/playerService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="44" selection-start="354" selection-end="354" vertical-scroll-proportion="-7.90625">
+            <state line="33" column="0" selection-start="984" selection-end="984" vertical-scroll-proportion="-16.53125">
               <folding />
             </state>
           </provider>
@@ -86,7 +86,7 @@
       <file leaf-file-name="mysql.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="5" selection-start="1881" selection-end="2421" vertical-scroll-proportion="-10.1875">
+            <state line="96" column="0" selection-start="1877" selection-end="2421" vertical-scroll-proportion="-2.28125">
               <folding />
             </state>
           </provider>
@@ -95,7 +95,7 @@
       <file leaf-file-name="mssql.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DB/mssql.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="5" selection-start="3324" selection-end="3324" vertical-scroll-proportion="0.6624">
+            <state line="133" column="25" selection-start="3798" selection-end="3798" vertical-scroll-proportion="0.92">
               <folding />
             </state>
           </provider>
@@ -132,12 +132,12 @@
         <option value="$PROJECT_DIR$/deamon/deamon_manage.php" />
         <option value="$PROJECT_DIR$/Services/rechargeOrderService.php" />
         <option value="$PROJECT_DIR$/Services/turnoverDataService.php" />
-        <option value="$PROJECT_DIR$/Services/player/playerService.php" />
         <option value="$PROJECT_DIR$/deamon/main.php" />
         <option value="$PROJECT_DIR$/deamon/client.php" />
         <option value="$PROJECT_DIR$/deamon/deamon.php" />
-        <option value="$PROJECT_DIR$/DB/mysql.class.php" />
         <option value="$PROJECT_DIR$/Services/complexDataService.php" />
+        <option value="$PROJECT_DIR$/Services/player/playerService.php" />
+        <option value="$PROJECT_DIR$/DB/mysql.class.php" />
         <option value="$PROJECT_DIR$/DB/mssql.class.php" />
       </list>
     </option>
@@ -431,13 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Services/player/playerService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="44" selection-start="354" selection-end="354" vertical-scroll-proportion="-7.90625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Services/rechargeOrderService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="11" selection-start="746" selection-end="746" vertical-scroll-proportion="-12.21875">
@@ -459,16 +452,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Services/player/playerService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="984" selection-end="984" vertical-scroll-proportion="-16.53125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="5" selection-start="1881" selection-end="2421" vertical-scroll-proportion="-10.1875">
+        <state line="96" column="0" selection-start="1877" selection-end="2421" vertical-scroll-proportion="-2.28125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DB/mssql.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="5" selection-start="3324" selection-end="3324" vertical-scroll-proportion="0.6624">
+        <state line="133" column="25" selection-start="3798" selection-end="3798" vertical-scroll-proportion="0.92">
           <folding />
         </state>
       </provider>

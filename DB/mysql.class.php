@@ -99,9 +99,9 @@ class Mysql
 
         $testCondition = trim($condition);
         if(preg_match('/((^[ ]*?)|(^))where(.*)/i',$testCondition))
-          $condition = preg_replace('/((^[ ]*?)|(^))[ ]where(.*)/','$1',$condition);
+          $condition = preg_replace('/((^[ ]*?)|(^))[ ]where(.*)/','$4',$condition);
         if(preg_match('/((^[ ]*?)|(^))where(.*)/i',$this->_condition))
-        $this -> _condition = preg_replace('/((^[ ]*?)|(^))where(.*)/','$1',$this->_condition);
+        $this -> _condition = preg_replace('/((^[ ]*?)|(^))where(.*)/','$4',$this->_condition);
 
         $this -> _condition = " where $this->_condition $condition ";
         return $this;

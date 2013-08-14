@@ -18,7 +18,7 @@ class PlayerService extends  Service
             $server = $this->getServer($condition -> server->id);
             $list = array();
             $consql = $this->getCondition($condition);
-
+DB::$debug = true;
             if(!empty($server)){
                 $this->connectServerDB($server);
                 $list =  $this->db->select("*")
@@ -68,7 +68,6 @@ class PlayerService extends  Service
 
         if(!empty($sql))
         $sql = ' where '.$sql;
-
         return $sql;
     }
 
