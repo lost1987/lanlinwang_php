@@ -80,7 +80,6 @@ Class complexDataService extends  Service {
                                                                        ->from($this->table_complex)
                                                                        ->where(" $time = $timepoint and type=0")
                                                                        ->get()->result_object() -> rechargenum;
-
                               //新增充值元宝
                               $obj -> newrecharge += $this ->db -> select ("sum(param1) as newrecharge")
                                                                           ->from($this->table_complex)
