@@ -86,7 +86,7 @@
       <file leaf-file-name="mysql.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="1877" selection-end="2421" vertical-scroll-proportion="-2.28125">
+            <state line="96" column="0" selection-start="1877" selection-end="2423" vertical-scroll-proportion="-2.875">
               <folding />
             </state>
           </provider>
@@ -95,7 +95,7 @@
       <file leaf-file-name="mssql.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DB/mssql.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="25" selection-start="3798" selection-end="3798" vertical-scroll-proportion="0.92">
+            <state line="113" column="26" selection-start="2883" selection-end="2883" vertical-scroll-proportion="0.2944">
               <folding />
             </state>
           </provider>
@@ -461,14 +461,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="1877" selection-end="2421" vertical-scroll-proportion="-2.28125">
+        <state line="96" column="0" selection-start="1877" selection-end="2423" vertical-scroll-proportion="-2.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DB/mssql.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="25" selection-start="3798" selection-end="3798" vertical-scroll-proportion="0.92">
+        <state line="113" column="26" selection-start="2883" selection-end="2883" vertical-scroll-proportion="0.2944">
           <folding />
         </state>
       </provider>
