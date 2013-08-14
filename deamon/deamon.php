@@ -16,6 +16,7 @@ $socket = socket_create(AF_INET,SOCK_STREAM,SOL_TCP);
 socket_bind($socket,SOCKET_HOST,SOCKET_PORT);
 socket_listen($socket,MAX_CONNECTION);
 socket_set_nonblock($socket);//设置非阻塞 否则只会执行一次或者不会执行后面的函数  非阻塞模式必须多路复用
+socket_setopt($socket,SOL_SOCKET,SO_REUSEADDR,1);
 $clients = array($socket);
 $time = time();
 while(1){
@@ -38,6 +39,7 @@ while(1){
     if(in_array($socket,$read)) {
         $clients[] = $newsock = socket_accept($socket);
         socket_set_nonblock($newsock);
+        socket_setopt($newsock,SOL_SOCKET,SO_REUSEADDR,1);
         $signal = socket_read($newsock,4);
         if(!empty($signal)){
             if($signal == 'stop'){
