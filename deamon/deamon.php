@@ -36,8 +36,14 @@ while(1){
         continue;
     }
 
+
     if(in_array($socket,$read)) {
         $clients[] = $newsock = socket_accept($socket);
+
+        //验证IP
+        socket_getpeername($newsock,$clientip);
+        if(!in_array($clientip,$allow['ips']))continue;
+
         socket_set_nonblock($newsock);
         socket_setopt($newsock,SOL_SOCKET,SO_REUSEADDR,1);
         $signal = socket_read($newsock,4);
@@ -45,6 +51,7 @@ while(1){
             if($signal == 'stop'){
                 for($i=0;$i<count($clients) ; $i++){
                         @socket_close($clients[$i]);
+                        if(isset($clients[$i]))
                         unset($clients[$i]);
                 }
                 //exit('统计守护进程已停止');
@@ -53,7 +60,7 @@ while(1){
                 socket_write($newsock,'1',1);
                @socket_close($newsock);
                 for($i=0;$i<count($clients) ; $i++){
-                    if($clients[$i] == $newsock){
+                    if(isset($clients[$i]) && $clients[$i] == $newsock){
                         unset($clients[$i]);
                     }
                 }
@@ -88,7 +95,7 @@ function yuanbaoAtMoment($servers){
     foreach($servers as $server){
         $stat = use_database($server,$db);
         if(!$stat) continue;
-        $obj = $db -> select('sum(cz) as yuanbao')->from('user') -> get() -> result_object();
+        $obj = $db -> select('sum(money2) as yuanbao')->from('user') -> get() -> result_object();
         if(empty($obj))continue;
         $yuanbao = $obj->yuanbao;
         $curtime = time();
@@ -107,7 +114,7 @@ function yuanbaoAt72($servers){
          if(!$stat) continue;
           //查询72小时之内有登录记录的uid
           $time =  $db -> timestamp('time');
-          $yuanbao72 = $db -> select("sum(cz) as yuanbao72") -> from('user')
+          $yuanbao72 = $db -> select("sum(money2) as yuanbao72") -> from('user')
                                 -> where(" uid in (select distinct(uid) as uid from record where $time > $starttime and $time < $curtime and type =  3) ")
                                 ->get() ->result_object()->yuanbao72;
          $db -> query("insert into statistic (type,param_nums,time,param_digits1) values (3,0,$curtime,$yuanbao72)");

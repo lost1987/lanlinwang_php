@@ -44,8 +44,11 @@ if(@socket_connect($socket,SOCKET_HOST,SOCKET_PORT)){
             $.post('client.php?m=stop_deamon','',function(data){
                             if(data.replace(/\s+/g,'') == 0){
                                 $("#msg").html('进程终止失败');
+                                $("#stopbtn").attr('disabled',false);
+                            }else{
+                                $("#msg").html('进程已经终止')
+                                $("#startbtn").attr('disabled',false);
                             }
-                            $("#stopbtn").attr('disabled',false);
               });
         }
 

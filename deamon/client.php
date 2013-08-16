@@ -12,7 +12,7 @@ define('IN_DEAMON',1);
 set_time_limit(0);
 //屏蔽报错,日志
 ini_set('display_errors','Off');
-ini_set('log_errors','Off');
+//ini_set('log_errors','Off');
 
 require 'main.php';
 require 'common.php';
@@ -24,12 +24,11 @@ require('../Lib/cookie.class.php');
 
 $input = new Input();
 $cookie = new Cookie();
-$methods = array('loginvalidate','deamon_manage','deamon','stop_deamon');
 
 $method =  !isset($_GET['m'])  ? $input->post('m') : $input->get('m');
 
 
-if(!empty($method) && in_array($method,$methods)){
+if(!empty($method) && in_array($method,$allow['methods'] )){
     require "$method.php";
     exit;
 }

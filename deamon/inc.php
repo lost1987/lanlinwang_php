@@ -14,3 +14,6 @@ define('APPKEY','buhuan');
 define('COOKIE_SECRECT','buhuan');
 define('COOKIE_TIMEOUT',3600);
 define('COOKIE_DOMAIN','/');
+
+$allow['methods'] = array('loginvalidate','deamon_manage','deamon','stop_deamon');
+$allow['ips'] = array('127.0.0.1','192.168.20.228');
