@@ -35,10 +35,14 @@ class Mysql
 
     public function connect($DB_HOST,$DB_USER,$DBPWD,$NEWLINK=FALSE){
         $this->link = mysql_connect($DB_HOST,$DB_USER,$DBPWD,$NEWLINK);
+        $this->charset('UTF8');
         return $this->link;
     }
 
+
+
     public function charset($charset){
+        mysql_set_charset($charset,$this->link);
     }
 
     public function select_db($dbname){

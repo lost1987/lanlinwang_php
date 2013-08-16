@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0529716b-bf32-407c-9bd5-8ee4edae02b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/client.php" afterPath="$PROJECT_DIR$/deamon/client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/common.php" afterPath="$PROJECT_DIR$/deamon/common.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/deamon.php" afterPath="$PROJECT_DIR$/deamon/deamon.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/deamon_manage.php" afterPath="$PROJECT_DIR$/deamon/deamon_manage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/inc.php" afterPath="$PROJECT_DIR$/deamon/inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DB/mysql.class.php" afterPath="$PROJECT_DIR$/DB/mysql.class.php" />
     </list>
     <ignored path="lanlinwang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,15 +40,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="phpinfo.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="phpinfo.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flexhtml/phpinfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="59" selection-start="0" selection-end="1634" vertical-scroll-proportion="0.552">
+            <state line="34" column="5" selection-start="1002" selection-end="1002" vertical-scroll-proportion="-12.21875">
               <folding>
                 <marker date="1376639565000" expanded="true" signature="1192:1238" placeholder="..." />
                 <marker date="1376639565000" expanded="true" signature="1376:1632" placeholder="..." />
                 <marker date="1376639565000" expanded="true" signature="1392:1471" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="0" selection-start="685" selection-end="685" vertical-scroll-proportion="0.4048">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,7 +121,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Services/complexDataService.php" />
-        <option value="$PROJECT_DIR$/DB/mysql.class.php" />
         <option value="$PROJECT_DIR$/DB/mssql.class.php" />
         <option value="$PROJECT_DIR$/Services/player/playerService.php" />
         <option value="$PROJECT_DIR$/Conf/db.inc.php" />
@@ -132,6 +135,7 @@
         <option value="$PROJECT_DIR$/flexhtml/AC_OETags.php" />
         <option value="$PROJECT_DIR$/flexhtml/AC_OETags.js" />
         <option value="$PROJECT_DIR$/flexhtml/phpinfo.php" />
+        <option value="$PROJECT_DIR$/DB/mysql.class.php" />
       </list>
     </option>
   </component>
@@ -184,6 +188,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lanlinwang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lanlinwang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lanlinwang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DB" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,12 +444,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flexhtml/phpinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="59" selection-start="0" selection-end="1634" vertical-scroll-proportion="0.552">
+        <state line="34" column="5" selection-start="1002" selection-end="1002" vertical-scroll-proportion="-12.21875">
           <folding>
             <marker date="1376639565000" expanded="true" signature="1192:1238" placeholder="..." />
             <marker date="1376639565000" expanded="true" signature="1376:1632" placeholder="..." />
             <marker date="1376639565000" expanded="true" signature="1392:1471" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="685" selection-end="685" vertical-scroll-proportion="0.4048">
+          <folding />
         </state>
       </provider>
     </entry>
