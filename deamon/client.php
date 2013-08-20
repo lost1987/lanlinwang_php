@@ -12,7 +12,7 @@ define('IN_DEAMON',1);
 set_time_limit(0);
 //屏蔽报错,日志
 ini_set('display_errors','Off');
-//ini_set('log_errors','Off');
+ini_set('log_errors','Off');
 
 require 'main.php';
 require 'common.php';

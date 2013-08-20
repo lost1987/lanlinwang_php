@@ -54,6 +54,7 @@ class ServerService extends Service implements IService
          */
 
         if(!isset($obj->id)){
+             if($this->is_serverID_exists($sid))return FALSE;
             $sql = "insert into $this->table_servers (id,name,ip,port,bid,dbuser,dbpwd,status,stat,dynamic_dbname,server_ip,server_port)
                     values ($sid,'$name','$ip',$port,$bid,'$dbuser','$dbpwd',$status,1,'$dynamic_dbname','$server_ip','$server_port')";
         }else{
@@ -124,6 +125,11 @@ class ServerService extends Service implements IService
         return $result;
     }
 
-
+    function is_serverID_exists($id){
+            $num = $this -> db -> select("count(name) as num") -> from("$this->table_servers")
+                        -> where("id = $id") -> get() -> result_object()->num;
+            if($num > 0) return TRUE;
+            return FALSE;
+    }
 
 }

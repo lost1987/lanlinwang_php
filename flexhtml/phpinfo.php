@@ -4,7 +4,7 @@ $time = time();
 $clinetKey = $_GET['key'];
 $myKey = md5($time.INFO_PWD);
 if($myKey != $clinetKey){
-    exit('no access!');
+    exit('no access! check php.ini timezone is correct');
 }
 
 require '../Conf/db.inc.php';

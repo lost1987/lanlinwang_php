@@ -15,6 +15,7 @@
 define('BASEPATH',dirname(__FILE__));
 
 ini_set('memcache.chunk_size',1024*1024*2);//2M
+ini_set('log_errors','Off');
 
 /**
 *  includes

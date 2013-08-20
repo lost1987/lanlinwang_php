@@ -60,11 +60,12 @@ class RechargeOrderService extends Service
                  $db_temp -> connect($param->server->ip.':'.$param->server->port,$param->server->dbuser,$param->server->dbpwd,TRUE);
                  $db_temp -> select_db($param->server->dynamic_dbname);
                 //查询每个用户非充值获取的元宝
-                $param -> unrecharge_yuanbao = $db_temp -> select("sum(param1) as unrecharge_yuanbao")
+                /*$param -> unrecharge_yuanbao = $db_temp -> select("sum(param1) as unrecharge_yuanbao")
                                                                     -> from($this->table_record)
                                                                     -> where("type=@[非充值用户获取元宝类型] and time > $starttime and time < $endtime")
                                                                     -> get()
-                                                                    -> result_object() -> unrecharge_yuanbao;
+                                                                    -> result_object() -> unrecharge_yuanbao;*/
+                $param -> unrecharge_yuanbao = 0;
 
                //查询每个用户总消耗的元宝
                 $param -> used_yuanbao = $db_temp -> select("sum(param1) as used_yuanbao")

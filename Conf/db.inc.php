@@ -9,6 +9,7 @@
 
 //账号数据库,分发数据库
 
+//define('DB_HOST','127.0.0.1');
 define('DB_HOST','192.168.20.160');
 define('DB_NAME','llw_admin');
 define('DB_USER','root');
