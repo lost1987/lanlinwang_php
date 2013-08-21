@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0529716b-bf32-407c-9bd5-8ee4edae02b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestCase/memcached.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestCase/testIndex.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Conf/config.inc.php" afterPath="$PROJECT_DIR$/Conf/config.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Conf/db.inc.php" afterPath="$PROJECT_DIR$/Conf/db.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Services/rechargeOrderService.php" afterPath="$PROJECT_DIR$/Services/rechargeOrderService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Services/serverService.php" afterPath="$PROJECT_DIR$/Services/serverService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/client.php" afterPath="$PROJECT_DIR$/deamon/client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/inc.php" afterPath="$PROJECT_DIR$/deamon/inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flexhtml/phpinfo.php" afterPath="$PROJECT_DIR$/flexhtml/phpinfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DB/mysql.class.php" afterPath="$PROJECT_DIR$/DB/mysql.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Services/sys/activecodeService.php" afterPath="$PROJECT_DIR$/Services/sys/activecodeService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Services/sys/mailService.php" afterPath="$PROJECT_DIR$/Services/sys/mailService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway.php" afterPath="$PROJECT_DIR$/gateway.php" />
     </list>
     <ignored path="lanlinwang.iws" />
@@ -31,97 +28,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gateway.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway.php">
+      <file leaf-file-name="mysql.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="3" selection-start="194" selection-end="194" vertical-scroll-proportion="-2.15625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="挂马.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/php框架包/挂马.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="572" column="22" selection-start="9954" selection-end="9954" vertical-scroll-proportion="1.4375">
-              <folding>
-                <marker date="1334920062000" expanded="false" signature="108264:108287" placeholder="..." />
-                <marker date="1334920062000" expanded="false" signature="108346:108369" placeholder="..." />
-                <marker date="1334920062000" expanded="false" signature="108454:108477" placeholder="..." />
-                <marker date="1334920062000" expanded="false" signature="108562:108585" placeholder="..." />
-                <marker date="1334920062000" expanded="false" signature="110109:110120" placeholder="..." />
-                <marker date="1334920062000" expanded="false" signature="110576:110587" placeholder="..." />
-                <marker date="1334920062000" expanded="false" signature="112763:112774" placeholder="..." />
-                <marker date="1334920062000" expanded="false" signature="113222:113234" placeholder="..." />
-                <marker date="1334920062000" expanded="false" signature="113288:113299" placeholder="..." />
-                <marker date="1334920062000" expanded="false" signature="113353:113365" placeholder="..." />
-                <marker date="1334920062000" expanded="false" signature="113420:113431" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deamon.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deamon/deamon.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="45" selection-start="1896" selection-end="1896" vertical-scroll-proportion="15.8125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="phpinfo.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flexhtml/phpinfo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="5" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-11.5">
-              <folding>
-                <marker date="1376989038000" expanded="true" signature="1226:1272" placeholder="..." />
-                <marker date="1376989038000" expanded="true" signature="1410:1666" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serverService.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Services/serverService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="5" selection-start="4500" selection-end="4500" vertical-scroll-proportion="0.41955835">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deamon/common.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="0" selection-start="2100" selection-end="2100" vertical-scroll-proportion="-6.15625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deamon/client.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="-2.15625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deamon_manage.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deamon/deamon_manage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="-6.46875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inc.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deamon/inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="28" selection-start="622" selection-end="622" vertical-scroll-proportion="-14.46875">
+            <state line="339" column="39" selection-start="9187" selection-end="9187" vertical-scroll-proportion="2.8840804">
               <folding />
             </state>
           </provider>
@@ -140,14 +50,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/flexhtml/AC_OETags.js" />
-        <option value="$PROJECT_DIR$/DB/mysql.class.php" />
-        <option value="$PROJECT_DIR$/Services/rechargeOrderService.php" />
-        <option value="$PROJECT_DIR$/../phpMyAdmin/config.inc.php" />
-        <option value="$USER_HOME$/Documents/php框架包/挂马.php" />
-        <option value="$PROJECT_DIR$/Conf/config.inc.php" />
-        <option value="$PROJECT_DIR$/Conf/db.inc.php" />
-        <option value="$PROJECT_DIR$/gateway.php" />
         <option value="$PROJECT_DIR$/deamon/client.php" />
         <option value="$PROJECT_DIR$/../locms/function/function_core.php" />
         <option value="$PROJECT_DIR$/../test.php" />
@@ -156,6 +58,14 @@
         <option value="$PROJECT_DIR$/flexhtml/phpinfo.php" />
         <option value="$PROJECT_DIR$/Services/serverService.php" />
         <option value="$PROJECT_DIR$/../liujie/Services/serverService.php" />
+        <option value="$PROJECT_DIR$/crossdomain.xml" />
+        <option value="$PROJECT_DIR$/TestCase/memcached.php" />
+        <option value="$PROJECT_DIR$/TestCase/testIndex.php" />
+        <option value="$PROJECT_DIR$/../multiinsert/mysql.class.php" />
+        <option value="$PROJECT_DIR$/Services/sys/mailService.php" />
+        <option value="$PROJECT_DIR$/Services/sys/activecodeService.php" />
+        <option value="$PROJECT_DIR$/gateway.php" />
+        <option value="$PROJECT_DIR$/DB/mysql.class.php" />
       </list>
     </option>
   </component>
@@ -219,21 +129,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanlinwang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanlinwang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flexhtml" />
+              <option name="myItemId" value="DB" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,10 +142,10 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../liujie" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../locms" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -315,8 +211,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14060259" sideWeight="0.21104816" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14060259" sideWeight="0.7790368" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14275466" sideWeight="0.21954674" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14275466" sideWeight="0.7705383" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -386,129 +282,107 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Services/createDataService.php">
+    <entry file="file://$PROJECT_DIR$/Core/Amf/Constants.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="39" selection-start="207" selection-end="207" vertical-scroll-proportion="-5.15625">
+        <state line="64" column="10" selection-start="1768" selection-end="1768" vertical-scroll-proportion="-40.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/stop_deamon.php">
+    <entry file="file://$PROJECT_DIR$/Lib/cookie.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="21" column="70" selection-start="451" selection-end="451" vertical-scroll-proportion="0.7728">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/loginvalidate.php">
+    <entry file="file://$PROJECT_DIR$/Lib/color.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="11" column="24" selection-start="225" selection-end="225" vertical-scroll-proportion="-0.0368">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/main.php">
+    <entry file="file://$PROJECT_DIR$/ClassLoader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="0.39103556">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/deamon_manage.php">
+    <entry file="file://$PROJECT_DIR$/crossdomain.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="-6.46875">
+        <state line="6" column="16" selection-start="100" selection-end="100" vertical-scroll-proportion="0.20324005">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway.php">
+    <entry file="file://$PROJECT_DIR$/../multiinsert/mysql.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="3" selection-start="194" selection-end="194" vertical-scroll-proportion="-2.15625">
+        <state line="264" column="23" selection-start="6909" selection-end="6909" vertical-scroll-proportion="0.60896444">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../locms/function/function_core.php">
+    <entry file="file://$PROJECT_DIR$/Conf/db.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="558" column="0" selection-start="14673" selection-end="14673" vertical-scroll-proportion="0.21078432">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.39103556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/php框架包/挂马.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="572" column="22" selection-start="9954" selection-end="9954" vertical-scroll-proportion="1.4375">
-          <folding>
-            <marker date="1334920062000" expanded="false" signature="108264:108287" placeholder="..." />
-            <marker date="1334920062000" expanded="false" signature="108346:108369" placeholder="..." />
-            <marker date="1334920062000" expanded="false" signature="108454:108477" placeholder="..." />
-            <marker date="1334920062000" expanded="false" signature="108562:108585" placeholder="..." />
-            <marker date="1334920062000" expanded="false" signature="110109:110120" placeholder="..." />
-            <marker date="1334920062000" expanded="false" signature="110576:110587" placeholder="..." />
-            <marker date="1334920062000" expanded="false" signature="112763:112774" placeholder="..." />
-            <marker date="1334920062000" expanded="false" signature="113222:113234" placeholder="..." />
-            <marker date="1334920062000" expanded="false" signature="113288:113299" placeholder="..." />
-            <marker date="1334920062000" expanded="false" signature="113353:113365" placeholder="..." />
-            <marker date="1334920062000" expanded="false" signature="113420:113431" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="-2.15625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2100" selection-end="2100" vertical-scroll-proportion="-6.15625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="28" selection-start="622" selection-end="622" vertical-scroll-proportion="-14.46875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/deamon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="45" selection-start="1896" selection-end="1896" vertical-scroll-proportion="15.8125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flexhtml/phpinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="5" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-11.5">
-          <folding>
-            <marker date="1376989038000" expanded="true" signature="1226:1272" placeholder="..." />
-            <marker date="1376989038000" expanded="true" signature="1410:1666" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../liujie/Services/serverService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="4" selection-start="4515" selection-end="4515" vertical-scroll-proportion="4.7352943">
+        <state line="12" column="32" selection-start="238" selection-end="241" vertical-scroll-proportion="0.21329212">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Services/serverService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="5" selection-start="4500" selection-end="4500" vertical-scroll-proportion="0.41955835">
+        <state line="15" column="32" selection-start="362" selection-end="362" vertical-scroll-proportion="-3.59375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/sys/noticeService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.9721794">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/sys/itemService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/sys/activecodeService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="49" selection-start="4355" selection-end="4355" vertical-scroll-proportion="4.208202">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="3" selection-start="217" selection-end="217" vertical-scroll-proportion="-3.59375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deamon/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="19" selection-start="302" selection-end="302" vertical-scroll-proportion="-11.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/sys/mailService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="41" selection-start="7528" selection-end="7528" vertical-scroll-proportion="0.32649842">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="339" column="39" selection-start="9187" selection-end="9187" vertical-scroll-proportion="2.8840804">
           <folding />
         </state>
       </provider>

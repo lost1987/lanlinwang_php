@@ -149,15 +149,15 @@ class MailService extends Service
                      foreach($players as $player){
                          if($cur%$pernum == 0){
                              $db->query($sql);
-                             $sql = "insert into $this->table_mail (uid,type,itemid,itemnum,content)  ";
-                         }else if($cur%$pernum == 1){
+                             $sql = "insert into $this->table_mail (uid,type,itemid,itemnum,content)  select $player->uid,$sendtype,$item_id,$item_num,'$mail->context' ";
+                         }else if($cur == 1){
                              $sql .=  " select $player->uid,$sendtype,$item_id,$item_num,'$mail->context' ";
                          }
                          else{
                              $sql .= " union all select $player->uid,$sendtype,$item_id,$item_num,'$mail->context'  ";
                          }
 
-                         if($total == $cur && $cur%$pernum !=0 ){
+                         if($total == $cur){
                              $db->query($sql);
                          }
 
@@ -284,15 +284,15 @@ class MailService extends Service
                             if(!$db->query($sql)){
                                 break;
                             }
-                            $sql = "insert into $this->table_mail (uid,type,itemid,itemnum,content) ";
-                        }else if($cur%$pernum == 1){
+                            $sql = "insert into $this->table_mail (uid,type,itemid,itemnum,content) select $player->uid,$sendtype,$item_id,$item_num,'$mail->context' ";
+                        }else if($cur == 1){
                             $sql .=  " select $player->uid,$sendtype,$item_id,$item_num,'$mail->context' ";
                         }
                         else{
                             $sql .= " union all select $player->uid,$sendtype,$item_id,$item_num,'$mail->context' ";
                         }
 
-                        if($total == $cur && $cur%$pernum !=0 ){
+                        if($total == $cur){
                             if(!$db->query($sql)){
                                 break;
                             }

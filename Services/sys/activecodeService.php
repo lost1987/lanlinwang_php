@@ -122,7 +122,13 @@ class ActivecodeService extends  ServerDBChooser
                     if($cur%$pernum == 0){
                         $db->query($sql);
                         $sql = "insert into $this->table_activecode (acode,name,astate,ctime,amask,itemid0,nums0,itemid1,nums1,itemid2,nums2,itemid3,nums3,itemid4,nums4,itemid5,nums5,itemid6,nums6,itemid7,nums7,aid,sid )  ";
-                    }else if($cur%$pernum == 1){
+                        $sql .= " select '$acode','$activecode->name',$activecode->astate,'$ctime',
+                                    $activecode->amask,$activecode->id1,$activecode->num1,$activecode->id2,
+                                    $activecode->num2,$activecode->id3,$activecode->num3,$activecode->id4,
+                                    $activecode->num4,$activecode->id5,$activecode->num5,$activecode->id6,
+                                    $activecode->num6, $activecode->id7,$activecode->num7,$activecode->id8,
+                                    $activecode->num8 ,0, {$servers[$t]->id} ";
+                    }else if($cur == 1){
                         $sql .=  " select '$acode','$activecode->name',$activecode->astate,'$ctime',
                                     $activecode->amask,$activecode->id1,$activecode->num1,$activecode->id2,
                                     $activecode->num2,$activecode->id3,$activecode->num3,$activecode->id4,
@@ -140,7 +146,7 @@ class ActivecodeService extends  ServerDBChooser
                     }
 
 
-                    if($cur == $nums && $cur%$pernum!=0){
+                    if($cur == $nums){
                         $db->query($sql);
                     }
 
