@@ -66,8 +66,9 @@ class Syslog extends Service
         $sql = "insert into llw_syslog (aid,admin,flagname,type,typename,donetime,server_id,server_name,refer_id,refer_name,itemid,itemnum,content,title,state,optime) values
         ($this->aid,'$this->admin','$this->flagname',$this->type,'$this->typename','$this->donetime',$this->server_id,'$this->server_name',$this->refer_id,'$this->refer_name',$this->item_id,$this->item_num,'$this->content','$this->title',$this->state,$this->optime)";
         if($db -> query($sql) -> queryState){
-            return $this;
+            return TRUE;
         }
+        return FALSE;
     }
 
     /**
@@ -86,21 +87,22 @@ class Syslog extends Service
             foreach($players as $player){
                 if($cur%$pernum == 0){
                     $db->query($sql);
-                    $sql = "insert into llw_mail_records (lid,playername,playerid) ";
-                }else if($cur%$pernum == 1){
+                    $sql = "insert into llw_mail_records (lid,playername,playerid)  select $lid,'$player->name','$player->uid' ";
+                }else if($cur == 1){
                     $sql .=  " select $lid,'$player->name','$player->uid' ";
                 }
                 else{
                     $sql .= " union all select $lid,'$player->name','$player->uid' ";
                 }
 
-                if($total == $cur && $cur%$pernum !=0 ){
-                    $db->query($sql);
+                if($total == $cur){
+                    if(!$db->query($sql)->queryState)return FALSE;
                 }
 
                 $cur++;
             }
         }
+        return TRUE;
     }
 
     public function getlogByTime($time,$server_id){

@@ -148,7 +148,7 @@ class MailService extends Service
 
                      foreach($players as $player){
                          if($cur%$pernum == 0){
-                             $db->query($sql);
+                             if(!$db -> query($sql) -> queryState) throw new Exception('mail write data error');
                              $sql = "insert into $this->table_mail (uid,type,itemid,itemnum,content)  select $player->uid,$sendtype,$item_id,$item_num,'$mail->context' ";
                          }else if($cur == 1){
                              $sql .=  " select $player->uid,$sendtype,$item_id,$item_num,'$mail->context' ";
@@ -158,7 +158,7 @@ class MailService extends Service
                          }
 
                          if($total == $cur){
-                             $db->query($sql);
+                             if(!$db -> query($sql) -> queryState) throw new Exception('mail write data error');
                          }
 
                          $cur++;
@@ -186,7 +186,8 @@ class MailService extends Service
                      $log_db -> connect(DB_HOST.':'.DB_PORT,DB_USER,DB_PWD,TRUE);
                      $log_db -> select_db(DB_NAME);
                      $log_db -> trans_begin();
-                     $slog -> setlog($log) -> tran_save($log_db) -> tran_saveMailPlayers($players,$log_db);
+                     if(!$slog -> setlog($log) -> tran_save($log_db))throw new Exception('mail write data error'); ;
+                     if(!$slog -> tran_saveMailPlayers($players,$log_db)) throw new Exception('mail write data error');
                  }
              }
 
@@ -281,9 +282,7 @@ class MailService extends Service
                     $total = count($players);
                     foreach($plist as $player){
                         if($cur%$pernum == 0){
-                            if(!$db->query($sql)){
-                                break;
-                            }
+                            if(!$db -> query($sql) -> queryState) throw new Exception('mail write data error');
                             $sql = "insert into $this->table_mail (uid,type,itemid,itemnum,content) select $player->uid,$sendtype,$item_id,$item_num,'$mail->context' ";
                         }else if($cur == 1){
                             $sql .=  " select $player->uid,$sendtype,$item_id,$item_num,'$mail->context' ";
@@ -293,9 +292,7 @@ class MailService extends Service
                         }
 
                         if($total == $cur){
-                            if(!$db->query($sql)){
-                                break;
-                            }
+                           if(!$db -> query($sql) -> queryState) throw new Exception('mail write data error');
                         }
 
                         $cur++;
@@ -322,7 +319,8 @@ class MailService extends Service
                     $log_db -> connect(DB_HOST.':'.DB_PORT,DB_USER,DB_PWD,TRUE);
                     $log_db -> select_db(DB_NAME);
                     $log_db -> trans_begin();
-                    $slog -> setlog($log) -> tran_save($log_db) -> tran_saveMailPlayers($plist,$log_db);
+                    if(!$slog -> setlog($log) -> tran_save($log_db))throw new Exception('mail write data error'); ;
+                    if(!$slog -> tran_saveMailPlayers($plist,$log_db)) throw new Exception('mail write data error');
                 }
 
             }

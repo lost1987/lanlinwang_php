@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0529716b-bf32-407c-9bd5-8ee4edae02b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DB/mssql.class.php" afterPath="$PROJECT_DIR$/DB/mssql.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/syslog.class.php" afterPath="$PROJECT_DIR$/Lib/syslog.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Services/sys/mailService.php" afterPath="$PROJECT_DIR$/Services/sys/mailService.php" />
     </list>
     <ignored path="lanlinwang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,16 +35,34 @@
       <file leaf-file-name="mailService.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Services/sys/mailService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="302" column="0" selection-start="11271" selection-end="11271" vertical-scroll-proportion="-14.71875">
+            <state line="95" column="0" selection-start="3397" selection-end="3397" vertical-scroll-proportion="-62.21875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mssql.class.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DB/mssql.class.php">
+      <file leaf-file-name="serverdbchooser.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lib/serverdbchooser.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.42658424">
+            <state line="10" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="-3.6875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lib/service.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="3" selection-start="159" selection-end="159" vertical-scroll-proportion="0.108191654">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="syslog.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lib/syslog.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="104" column="20" selection-start="3622" selection-end="3622" vertical-scroll-proportion="-6.15625">
               <folding />
             </state>
           </provider>
@@ -63,7 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../locms/function/function_core.php" />
         <option value="$PROJECT_DIR$/../test.php" />
         <option value="$PROJECT_DIR$/deamon/inc.php" />
         <option value="$PROJECT_DIR$/deamon/deamon.php" />
@@ -74,11 +91,12 @@
         <option value="$PROJECT_DIR$/TestCase/memcached.php" />
         <option value="$PROJECT_DIR$/TestCase/testIndex.php" />
         <option value="$PROJECT_DIR$/../multiinsert/mysql.class.php" />
-        <option value="$PROJECT_DIR$/Services/sys/mailService.php" />
         <option value="$PROJECT_DIR$/Services/sys/activecodeService.php" />
         <option value="$PROJECT_DIR$/gateway.php" />
         <option value="$PROJECT_DIR$/DB/mysql.class.php" />
         <option value="$PROJECT_DIR$/DB/mssql.class.php" />
+        <option value="$PROJECT_DIR$/Lib/syslog.class.php" />
+        <option value="$PROJECT_DIR$/Services/sys/mailService.php" />
       </list>
     </option>
   </component>
@@ -161,6 +179,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lanlinwang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lanlinwang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,21 +359,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Core/Amf/Constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="10" selection-start="1768" selection-end="1768" vertical-scroll-proportion="-40.25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/cookie.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="70" selection-start="451" selection-end="451" vertical-scroll-proportion="0.7728" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/color.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="225" selection-end="225" vertical-scroll-proportion="-0.0368" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClassLoader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="0.39103556" />
@@ -394,9 +411,23 @@
         <state line="16" column="19" selection-start="302" selection-end="302" vertical-scroll-proportion="-11.5" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/syslog.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="20" selection-start="3622" selection-end="3622" vertical-scroll-proportion="-6.15625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Services/sys/mailService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="302" column="0" selection-start="11271" selection-end="11271" vertical-scroll-proportion="-14.71875">
+        <state line="95" column="0" selection-start="3397" selection-end="3397" vertical-scroll-proportion="-62.21875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/serverdbchooser.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="-3.6875">
           <folding />
         </state>
       </provider>
@@ -410,7 +441,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DB/mssql.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.42658424">
+        <state line="9" column="1" selection-start="173" selection-end="173" vertical-scroll-proportion="-4.5146832">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/service.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="3" selection-start="159" selection-end="159" vertical-scroll-proportion="0.108191654">
           <folding />
         </state>
       </provider>
