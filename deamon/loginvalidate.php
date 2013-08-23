@@ -7,7 +7,7 @@ if(!defined('IN_DEAMON'))exit;
  * Time: 上午11:16
  * To change this template use File | Settings | File Templates.
  */
-
+header("Content-Type:text/html;charset=utf-8");
 $username  = $input -> post('username');
 $password = $input -> post('password');
 
