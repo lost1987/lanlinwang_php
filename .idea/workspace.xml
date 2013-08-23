@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0529716b-bf32-407c-9bd5-8ee4edae02b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/loginvalidate.php" afterPath="$PROJECT_DIR$/deamon/loginvalidate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/readme.txt" afterPath="$PROJECT_DIR$/deamon/readme.txt" />
     </list>
     <ignored path="lanlinwang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,35 +22,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="client.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deamon/client.php">
+      <file leaf-file-name="ByteArray.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Amf/Types/ByteArray.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="19" selection-start="302" selection-end="302" vertical-scroll-proportion="-7.1875">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.03125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inc.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deamon/inc.php">
+      <file leaf-file-name="Date.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Date.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="3.46875">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.03125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deamon.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deamon/deamon.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="234" selection-end="234" vertical-scroll-proportion="-5.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/event.php">
+      <file leaf-file-name="Undefined.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Undefined.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -59,8 +49,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contentconfig.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/contentconfig.php">
+      <file leaf-file-name="Xml.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Xml.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -68,46 +58,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/common.php">
+      <file leaf-file-name="XmlDocument.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Amf/Types/XmlDocument.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="66.84375">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.34375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activecodeService.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Services/sys/activecodeService.php">
+      <file leaf-file-name="Serializer.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Amf/Serializer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="35" selection-start="7745" selection-end="7745" vertical-scroll-proportion="-120.46875">
+            <state line="724" column="49" selection-start="25981" selection-end="25981" vertical-scroll-proportion="-77.34375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginvalidate.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deamon/loginvalidate.php">
+      <file leaf-file-name="Packet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Amf/Packet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="47" selection-start="239" selection-end="239" vertical-scroll-proportion="0.3312">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.5625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deamon_manage.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deamon/deamon_manage.php">
+      <file leaf-file-name="Exception.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Exception.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="8.625">
+            <state line="18" column="4" selection-start="393" selection-end="393" vertical-scroll-proportion="-7.1875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deamon/main.php">
+      <file leaf-file-name="log.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/log.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="51" selection-start="468" selection-end="468" vertical-scroll-proportion="-7.90625">
+            <state line="23" column="0" selection-start="381" selection-end="381" vertical-scroll-proportion="-11.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="11" selection-start="171" selection-end="171" vertical-scroll-proportion="-8.7888">
               <folding />
             </state>
           </provider>
@@ -126,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Services/serverService.php" />
         <option value="$PROJECT_DIR$/../liujie/Services/serverService.php" />
         <option value="$PROJECT_DIR$/crossdomain.xml" />
         <option value="$PROJECT_DIR$/TestCase/memcached.php" />
@@ -142,6 +140,7 @@
         <option value="$PROJECT_DIR$/deamon/main.php" />
         <option value="$PROJECT_DIR$/Services/sys/activecodeService.php" />
         <option value="$PROJECT_DIR$/deamon/loginvalidate.php" />
+        <option value="$PROJECT_DIR$/deamon/readme.txt" />
       </list>
     </option>
   </component>
@@ -205,21 +204,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanlinwang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanlinwang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deamon" />
+              <option name="myItemId" value="DB" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -386,79 +371,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Conf/config.excel.php">
+    <entry file="file://$PROJECT_DIR$/ClassLoader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="10.65625">
+        <state line="32" column="56" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-17.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/db.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="35" selection-start="244" selection-end="244" vertical-scroll-proportion="-4.3125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/mssql.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="159" selection-end="159" vertical-scroll-proportion="216.9375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="44" selection-start="607" selection-end="615" vertical-scroll-proportion="-27.3125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/stop_deamon.php">
+    <entry file="file://$PROJECT_DIR$/DB/engine.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="59" selection-start="296" selection-end="303" vertical-scroll-proportion="-7.90625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="302" selection-end="302" vertical-scroll-proportion="-7.1875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="3.46875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/deamon_manage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="8.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="51" selection-start="468" selection-end="468" vertical-scroll-proportion="-7.90625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/deamon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="234" selection-end="234" vertical-scroll-proportion="-5.75">
           <folding />
         </state>
       </provider>
@@ -470,6 +392,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Common/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="24" selection-start="3361" selection-end="3361" vertical-scroll-proportion="-89.84375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Common/contentconfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -477,23 +406,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/common.php">
+    <entry file="file://$PROJECT_DIR$/gateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="66.84375">
+        <state line="38" column="3" selection-start="957" selection-end="957" vertical-scroll-proportion="-4.03125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Services/sys/activecodeService.php">
+    <entry file="file://$PROJECT_DIR$/Core/Amf/Types/ByteArray.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="35" selection-start="7745" selection-end="7745" vertical-scroll-proportion="-120.46875">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.03125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deamon/loginvalidate.php">
+    <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Date.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="47" selection-start="239" selection-end="239" vertical-scroll-proportion="0.3312">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.03125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Undefined.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Xml.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Amf/Types/XmlDocument.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.34375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Amf/Serializer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="724" column="49" selection-start="25981" selection-end="25981" vertical-scroll-proportion="-77.34375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Amf/Packet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.5625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Exception.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="4" selection-start="393" selection-end="393" vertical-scroll-proportion="-7.1875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="381" selection-end="381" vertical-scroll-proportion="-11.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="11" selection-start="171" selection-end="171" vertical-scroll-proportion="-8.7888">
           <folding />
         </state>
       </provider>

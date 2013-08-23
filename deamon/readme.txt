@@ -5,10 +5,17 @@
   `time` int(11) NOT NULL,
   `param_digits1` int(11) DEFAULT NULL,
   `param_digits2` int(11) DEFAULT NULL,
+  `param_digits3` int(11) DEFAULT NULL,
+  `param_digits4` int(11) DEFAULT NULL,
+  `param_digits5` int(11) DEFAULT NULL,
+  `param_digits6` int(11) DEFAULT NULL,
+  `param_digits7` int(11) DEFAULT NULL,
+  `param_digits8` int(11) DEFAULT NULL,
+  `param_digits9` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_type` (`type`) USING BTREE,
   KEY `idx_time` (`time`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8
+) ENGINE=MyISAM AUTO_INCREMENT=377 DEFAULT CHARSET=utf8 |
 
 param_nums 存放数量
 param_digits 存放数值
