@@ -26,10 +26,9 @@ class AdminService extends Service implements IService
       $sql  =  "update $this->table_admin set permission=$permission where id = $id";
       $this -> db -> query($sql);
 
-      $sql = "update $this->table_permission set xtgl=$admin->xtgl,wjgl=$admin->wjgl
+      $sql = "update $this->table_permission set xtgl=$admin->xtgl,wjgl=$admin->wjgl,
              yygl=$admin->yygl,glygl=$admin->glygl,zhgl=$admin->zhgl,sjbb=$admin->sjbb,
               lsl=$admin->lsl ,lchy=$admin->lchy where id = $id";
-
       return $this -> db -> query($sql) -> queryState;
   }
 

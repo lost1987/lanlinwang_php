@@ -37,7 +37,7 @@ class Mysql
 
     public function connect($DB_HOST,$DB_USER,$DBPWD,$NEWLINK=FALSE){
         $this->link = mysql_connect($DB_HOST,$DB_USER,$DBPWD,$NEWLINK);
-        $this->charset('UTF8');
+        $this->charset('UTF8',$this->link);
         return $this->link;
     }
 
