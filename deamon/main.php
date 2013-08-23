@@ -22,4 +22,4 @@ $table_servers = 'llw_servers';
 $db = new DB;
 $db -> connect(DB_HOST.':'.DB_PORT,DB_USER,DB_PWD);
 $db -> select_db(DB_NAME);
-$servers = $db -> select('*') -> from($table_servers) -> get() -> result_objects();
+$servers = $db -> select('*') -> from($table_servers) ->where('stat = 1')-> get() -> result_objects();
