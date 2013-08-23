@@ -29,6 +29,8 @@ class Mysql
 
     private $_group_by;
 
+    private $_xid=null;
+
     function mysql(){
         $this -> flush();
     }
@@ -235,6 +237,37 @@ class Mysql
         mysql_query('ROLLBACK',$this->link);
         mysql_query('END',$this->link);
         mysql_query('SET AUTOCOMMIT = 1',$this->link);
+    }
+
+    public function setXID($xid){
+        $this -> _xid = $xid;
+    }
+
+    public function xa_start(){
+        if(is_null($this->_xid))throw new Exception('xid has not set');
+        mysql_query("XA START '$this->_xid'",$this->link);
+    }
+
+    public function xa_end(){
+        if(is_null($this->_xid))throw new Exception('xid has not set');
+        mysql_query("XA END '$this->_xid'",$this->link);
+    }
+
+    public function xa_prepare(){
+        if(is_null($this->_xid))throw new Exception('xid has not set');
+        mysql_query("XA PREPARE '$this->_xid'",$this->link);
+    }
+
+    public function xa_commit(){
+        if(is_null($this->_xid))throw new Exception('xid has not set');
+        mysql_query("XA COMMIT '$this->_xid'",$this->link);
+        $this->_xid = null;
+    }
+
+    public function xa_rollback(){
+        if(is_null($this->_xid))throw new Exception('xid has not set');
+        mysql_query("XA ROLLBACK '$this->_xid'",$this->link);
+        $this->_xid = null;
     }
 
     public function timestamp($columnName){
