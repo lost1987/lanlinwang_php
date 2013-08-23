@@ -38,12 +38,14 @@ while(1){
 
 
     if(in_array($socket,$read)) {
-        $clients[] = $newsock = socket_accept($socket);
+         $newsock = socket_accept($socket);
 
         //验证IP
         socket_getpeername($newsock,$clientip);
-        if(!in_array($clientip,$allow['ips']))continue;
+        if(!in_array($clientip,$allow['ips']))
+            continue;
 
+        $clients[] = $newsock;
         socket_set_nonblock($newsock);
         socket_setopt($newsock,SOL_SOCKET,SO_REUSEADDR,1);
         $signal = socket_read($newsock,4);
