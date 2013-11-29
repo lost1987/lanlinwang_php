@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0529716b-bf32-407c-9bd5-8ee4edae02b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/readme.txt" afterPath="$PROJECT_DIR$/deamon/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Services/complexDataService.php" afterPath="$PROJECT_DIR$/Services/complexDataService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/datacache.class.php" afterPath="$PROJECT_DIR$/Lib/datacache.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Conf/db.inc.php" afterPath="$PROJECT_DIR$/Conf/db.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/deamon.php" afterPath="$PROJECT_DIR$/deamon/deamon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deamon/deamon_manage.php" afterPath="$PROJECT_DIR$/deamon/deamon_manage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway.php" afterPath="$PROJECT_DIR$/gateway.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flexhtml/phpinfo.php" afterPath="$PROJECT_DIR$/flexhtml/phpinfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Services/player/playerService.php" afterPath="$PROJECT_DIR$/Services/player/playerService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Services/rechargeOrderService.php" afterPath="$PROJECT_DIR$/Services/rechargeOrderService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Services/turnoverDataService.php" afterPath="$PROJECT_DIR$/Services/turnoverDataService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Services/userStayDataService.php" afterPath="$PROJECT_DIR$/Services/userStayDataService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lanlinwang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,93 +32,42 @@
     <disable_hints />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="lanlinwang" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ByteArray.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/Amf/Types/ByteArray.php">
+      <file leaf-file-name="rechargeOrderService.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Services/rechargeOrderService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.03125">
+            <state line="70" column="49" selection-start="2960" selection-end="2968" vertical-scroll-proportion="-9.8" vertical-offset="1176" max-vertical-offset="1953">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Date.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Date.php">
+      <file leaf-file-name="rechargeDataService.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Services/rechargeDataService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.03125">
+            <state line="27" column="0" selection-start="840" selection-end="840" vertical-scroll-proportion="0.8915094" vertical-offset="0" max-vertical-offset="2457">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Undefined.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Undefined.php">
+      <file leaf-file-name="complexDataService.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Services/complexDataService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="95" column="92" selection-start="5808" selection-end="5808" vertical-scroll-proportion="151.0" vertical-offset="6378" max-vertical-offset="7014">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Xml.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Xml.php">
+      <file leaf-file-name="turnoverDataService.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Services/turnoverDataService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlDocument.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/Amf/Types/XmlDocument.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.34375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Serializer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/Amf/Serializer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="724" column="49" selection-start="25981" selection-end="25981" vertical-scroll-proportion="-77.34375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Packet.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/Amf/Packet.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.5625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exception.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/Exception.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="4" selection-start="393" selection-end="393" vertical-scroll-proportion="-7.1875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/log.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="381" selection-end="381" vertical-scroll-proportion="-11.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql.class.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="11" selection-start="171" selection-end="171" vertical-scroll-proportion="-8.7888">
+            <state line="117" column="43" selection-start="5227" selection-end="5227" vertical-scroll-proportion="-42.7" vertical-offset="1176" max-vertical-offset="4326">
               <folding />
             </state>
           </provider>
@@ -122,25 +83,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../liujie/Services/serverService.php" />
-        <option value="$PROJECT_DIR$/crossdomain.xml" />
-        <option value="$PROJECT_DIR$/TestCase/memcached.php" />
-        <option value="$PROJECT_DIR$/TestCase/testIndex.php" />
-        <option value="$PROJECT_DIR$/../multiinsert/mysql.class.php" />
-        <option value="$PROJECT_DIR$/gateway.php" />
-        <option value="$PROJECT_DIR$/Lib/syslog.class.php" />
-        <option value="$PROJECT_DIR$/Services/sys/mailService.php" />
-        <option value="$PROJECT_DIR$/DB/mssql.class.php" />
+        <option value="$PROJECT_DIR$/deamon/index.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Services/userStayDataService.php" />
+        <option value="$PROJECT_DIR$/../liujie/Api/baseapi.class.php" />
+        <option value="$PROJECT_DIR$/../liujie/Api/user.class.php" />
+        <option value="$PROJECT_DIR$/deamon/deamon_manage.php" />
+        <option value="$PROJECT_DIR$/flexhtml/phpinfo.php" />
+        <option value="$PROJECT_DIR$/Conf/db.inc.php" />
         <option value="$PROJECT_DIR$/deamon/deamon.php" />
-        <option value="$PROJECT_DIR$/Services/adminService.php" />
-        <option value="$PROJECT_DIR$/DB/mysql.class.php" />
-        <option value="$PROJECT_DIR$/deamon/main.php" />
-        <option value="$PROJECT_DIR$/Services/sys/activecodeService.php" />
-        <option value="$PROJECT_DIR$/deamon/loginvalidate.php" />
-        <option value="$PROJECT_DIR$/deamon/readme.txt" />
+        <option value="$PROJECT_DIR$/Services/player/playerService.php" />
+        <option value="$PROJECT_DIR$/../test.php" />
+        <option value="$PROJECT_DIR$/../temp.php" />
+        <option value="$PROJECT_DIR$/Services/turnoverDataService.php" />
+        <option value="$PROJECT_DIR$/gateway.php" />
+        <option value="$PROJECT_DIR$/Services/rechargeOrderService.php" />
+        <option value="$PROJECT_DIR$/Services/complexDataService.php" />
       </list>
     </option>
   </component>
@@ -204,21 +170,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanlinwang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanlinwang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
+              <option name="myItemId" value="Services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -231,7 +183,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../liujie" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../llw_pay" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -257,11 +209,10 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -294,14 +245,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="827" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1492109" sideWeight="0.24504249" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1492109" sideWeight="0.7450425" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17503586" sideWeight="0.2956153" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17503586" sideWeight="0.7029703" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -320,165 +272,104 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ClassLoader.php">
+    <entry file="file://$PROJECT_DIR$/Services/userTurnOverDataService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="56" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-17.25">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="41.8" vertical-offset="1254" max-vertical-offset="1869" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/serverService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="78.2" vertical-offset="2346" max-vertical-offset="2961" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/levelDataService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="33" selection-start="3195" selection-end="3195" vertical-scroll-proportion="-12.6" vertical-offset="1155" max-vertical-offset="2583" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/createDataService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="50" selection-start="4012" selection-end="4012" vertical-scroll-proportion="0.64714944" vertical-offset="1197" max-vertical-offset="3066" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="178" selection-end="178" vertical-scroll-proportion="0.13207547" vertical-offset="0" max-vertical-offset="636" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="48" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.8520801" vertical-offset="1253" max-vertical-offset="1974">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DB/engine.class.php">
+    <entry file="file://$PROJECT_DIR$/deamon/deamon.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="148" column="92" selection-start="5748" selection-end="5748" vertical-scroll-proportion="0.7688679" vertical-offset="2619" max-vertical-offset="3570" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="24" selection-start="3361" selection-end="3361" vertical-scroll-proportion="-89.84375">
-          <folding />
-        </state>
+        <state line="55" column="58" selection-start="1467" selection-end="1471" vertical-scroll-proportion="0.48536208" vertical-offset="840" max-vertical-offset="2856" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/contentconfig.php">
+    <entry file="file://$PROJECT_DIR$/Services/buissnesserService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="25" column="23" selection-start="740" selection-end="740" vertical-scroll-proportion="0.80893683" vertical-offset="0" max-vertical-offset="1764" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="3" selection-start="957" selection-end="957" vertical-scroll-proportion="-4.03125">
+        <state line="53" column="2" selection-start="1495" selection-end="1495" vertical-scroll-proportion="1.4560863" vertical-offset="0" max-vertical-offset="1113" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/loginDataService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="82" selection-start="3499" selection-end="3499" vertical-scroll-proportion="2.6856704" vertical-offset="0" max-vertical-offset="2331" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/product/llw_pay/inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="25" selection-start="356" selection-end="387" vertical-scroll-proportion="0.3559322" vertical-offset="0" max-vertical-offset="1113">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Amf/Types/ByteArray.php">
+    <entry file="file://$PROJECT_DIR$/Services/complexDataService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.03125">
+        <state line="95" column="92" selection-start="5808" selection-end="5808" vertical-scroll-proportion="151.0" vertical-offset="6378" max-vertical-offset="7014">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Date.php">
+    <entry file="file://$PROJECT_DIR$/Services/turnoverDataService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.03125">
+        <state line="117" column="43" selection-start="5227" selection-end="5227" vertical-scroll-proportion="-42.7" vertical-offset="1176" max-vertical-offset="4326">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Undefined.php">
+    <entry file="file://$PROJECT_DIR$/Services/rechargeOrderService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="70" column="49" selection-start="2960" selection-end="2968" vertical-scroll-proportion="-9.8" vertical-offset="1176" max-vertical-offset="1953">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Amf/Types/Xml.php">
+    <entry file="file://$PROJECT_DIR$/Services/rechargeDataService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Amf/Types/XmlDocument.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.34375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Amf/Serializer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="724" column="49" selection-start="25981" selection-end="25981" vertical-scroll-proportion="-77.34375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Amf/Packet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.5625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Exception.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="4" selection-start="393" selection-end="393" vertical-scroll-proportion="-7.1875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/log.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="381" selection-end="381" vertical-scroll-proportion="-11.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/mysql.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="171" selection-end="171" vertical-scroll-proportion="-8.7888">
+        <state line="27" column="0" selection-start="840" selection-end="840" vertical-scroll-proportion="0.8915094" vertical-offset="0" max-vertical-offset="2457">
           <folding />
         </state>
       </provider>

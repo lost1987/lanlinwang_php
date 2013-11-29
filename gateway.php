@@ -12,6 +12,7 @@
 /**
  * entrance define
  */
+//$stime = microtime(true);
 define('BASEPATH',dirname(__FILE__));
 
 ini_set('memcache.chunk_size',1024*1024*2);//2M
@@ -48,6 +49,7 @@ $gateway = Amfphp_Core_HttpRequestGatewayFactory::createGateway($config);
 
 $gateway->service();
 $gateway->output();
-
-
+//$etime = microtime(true);
+//$exetime = $etime- $stime;
+//error_log($exetime);
 ?>

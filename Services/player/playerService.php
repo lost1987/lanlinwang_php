@@ -55,12 +55,12 @@ class PlayerService extends  Service
         if(!empty($onlinestatus)){
             if(empty($sql)){
                   if($onlinestatus == 1)
-                    $sql = " ($now - $lastdate) <= 10*60 ";
+                    $sql = " ($now - $lastdate) <= 10*60 and  ($now-$lastdate) > 0 ";
                  else
                      $sql = " ($now - $lastdate) > 10*60 ";
             }else{
                 if($onlinestatus == 1)
-                    $sql .= " and ($now - $lastdate) <= 10*60";
+                    $sql .= " and ($now - $lastdate) <= 10*60 and  ($now-$lastdate) > 0";
                 else
                     $sql = "and ($now - $lastdate) > 10*60 ";
             }

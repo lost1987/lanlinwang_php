@@ -52,7 +52,7 @@ if(@socket_connect($socket,SOCKET_HOST,SOCKET_PORT)){
               });
         }
 
-        <? if($isstart){?>//如果进程已经启动
+        <?php  if($isstart){   ?>//如果进程已经启动
             $(function(){
                     isstart();
             })
@@ -62,7 +62,7 @@ if(@socket_connect($socket,SOCKET_HOST,SOCKET_PORT)){
                 $("#startbtn").attr('disabled',true);
                 $("#stopbtn").attr('disabled',false);
             }
-        <?}?>
+        <?php } ?>
 
     </script>
 </head>

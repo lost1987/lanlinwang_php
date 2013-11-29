@@ -1,10 +1,11 @@
-<?
+<?php
 define('INFO_PWD','bdijltvwxzBCDEFGIJLMOQTVWXZ12357');
-$time = time();
 $clinetKey = $_GET['key'];
+list($key,$time) = explode('|',$clinetKey);
+$time = substr($time,0,10);
 $myKey = md5($time.INFO_PWD);
-if($myKey != $clinetKey){
-    exit('no access! check php.ini timezone is correct');
+if($myKey != $key){
+    exit('no access!');
 }
 
 require '../Conf/db.inc.php';
@@ -50,7 +51,7 @@ foreach($system as $k=>$v){
 
 $table.='</table></center><br/><br/>';
 echo $table;
-phpinfo();
+//phpinfo();
 ?>
 
 <style>

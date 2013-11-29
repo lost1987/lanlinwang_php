@@ -13,10 +13,12 @@ Class complexDataService extends  Service {
     function complexDataService(){
         $this -> table_complex = 'record';
         $this -> table_statistic = 'statistic';
+        $this -> table_user = 'user';
         $this -> db =  new DB;
     }
 
     public function lists($page,$condition){
+        //$stime = microtime(true);
         $server_ids = $condition -> server_ids;
         $starttime = $condition->starttime;
         $endtime = $condition->endtime;
@@ -25,9 +27,12 @@ Class complexDataService extends  Service {
         $list = array();
         $currow = 0;//当前的行数
         $servers = $this->getServers($server_ids);
+
+        /*****原来的代码******/
         foreach($timePointCollection as $timepoint){
-                if($currow >= $page->start && $currow < $page->limit){
+                if($currow >= $page->start && $currow < ($page->limit+$page->start)){
                         $obj = new stdClass();
+
                         foreach($servers as $server){
                                $this->connectServerDB($server);
                                $time = $this->db->timestamp('left(time,10)');
@@ -36,24 +41,24 @@ Class complexDataService extends  Service {
                                                                             ->where(" $time = $timepoint and type=1")
                                                                             ->get()->result_object() -> registernum;
 
+
                                $obj -> createnum +=  $this->db->select("count(uid) as createnum")
                                                                            ->from($this->table_complex)
                                                                            ->where(" $time = $timepoint and type=2")
                                                                            ->get()->result_object() -> createnum;
 
 
-                               $obj -> loginnum  += $this->db->select("count(uid) as loginnum")
+                               $obj -> loginnum  += $this->db->select("count(distinct(uid)) as loginnum")
                                                                            ->from($this->table_complex)
                                                                            ->where(" $time = $timepoint and type=3")
                                                                            ->get()->result_object() -> loginnum;
 
                                 //最高在线,平均在线 放一下
-
                                 $curtime  = $this->db->timestamp($this->db->fromunixtime('time','%Y-%m-%d'));
                                 $ave = $this -> db->select("sum(param_nums) as aveonline,count(id) as times")
                                                                 ->from($this->table_statistic)
                                                                 ->where("$curtime = $timepoint and type = 1")
-                                                                ->get()->result_objects();
+                                                                ->get()->result_object();
 
                                 $obj -> aveonline += empty($ave->aveonline) ? 0 : ($ave->aveonline/$ave->times)>>0;
                                 $obj->maxonline += $this -> db->select("max(param_nums) as maxonline")
@@ -83,31 +88,31 @@ Class complexDataService extends  Service {
                               //新增充值元宝
                               $obj -> newrecharge += $this ->db -> select ("sum(param1) as newrecharge")
                                                                           ->from($this->table_complex)
-                                                                          ->where(" $time = $timepoint and type=0 and uid not in (select distinct(uid) as uid from $this->table_complex where $time < $timepoint and type=0)")
+                                                                          ->where(" $time = $timepoint and type=0 and uid in (select uid from $this->table_user where firstczdate = $timepoint)")
                                                                           ->get()->result_object()->newrecharge;
 
                             //新增充值人数
                             $obj -> newrechargeperson += $this ->db -> select ("count(distinct(uid)) as newrechargeperson")
                                                                             ->from($this->table_complex)
-                                                                            ->where(" $time = $timepoint and type=0 and uid not in (select distinct(uid) as uid from $this->table_complex where $time < $timepoint and type =0)")
+                                                                            ->where(" $time = $timepoint and type=0 and uid in (select uid from $this->table_user where firstczdate = $timepoint)")
                                                                             ->get()->result_object()->newrechargeperson;
 
 
                             //老用户登录
-                            $obj -> oldlogin += $this -> db ->select("count(uid) as oldlogin")
+                            $obj -> oldlogin += $this -> db ->select("count(distinct(uid)) as oldlogin")
                                                             -> from($this->table_complex)
-                                                            -> where(" $time = $timepoint and type=3 and uid in (select distinct(uid) as uid from $this->table_complex where $time < $timepoint and type = 3)")
+                                                            -> where(" $time = $timepoint and type=3 and uid in (select  uid from $this->table_user where unix_timestamp(createdate) < $timepoint)")
                                                             -> get()->result_object()->oldlogin;
 
                             //老用户充值
                             $obj -> oldrecharge += $this ->db -> select ("sum(param1) as oldrecharge")
                                                                 ->from($this->table_complex)
-                                                                ->where(" $time = $timepoint and type=0 and uid in (select distinct(uid) as uid from $this->table_complex where $time < $timepoint and type = 3)")
+                                                                ->where(" $time = $timepoint and type=0 and uid in (select  uid from $this->table_user where cz > 0 and type = 3)")
                                                                 ->get()->result_object()->oldrecharge;
 
 
                             //消费元宝
-                            $obj -> consumption +=  $this->db->select("count(distinct(uid)) as consumption")
+                            $obj -> consumption +=  $this->db->select("sum(param1) as consumption")
                                                                 ->from($this->table_complex)
                                                                 ->where(" $time = $timepoint and type=4")
                                                                 ->get()->result_object() -> consumption;
@@ -132,7 +137,7 @@ Class complexDataService extends  Service {
 
                             $obj->overyuanbao += count($overyuanbao) > 0 ? $overyuanbao[0]->overyuanbao : 0;
 
-                            // 查询72小时内有登录的用户的剩余元宝
+                             //查询72小时内有登录的用户的剩余元宝
                             $overyuanbao72 =  $this->db->select("param_digits1 as overyuanbao72,time")
                                 ->from($this->table_statistic)
                                 ->where(" $curtime = $timepoint and type = 3")
@@ -152,7 +157,7 @@ Class complexDataService extends  Service {
                         }
 
                         //ARPU
-                        $obj -> arpu = ($obj->rechargeperson != 0) ? number_format($obj->recharge/$obj->rechargeperson,2) : '/';
+                       $obj -> arpu = ($obj->rechargeperson != 0) ? number_format($obj->recharge/$obj->rechargeperson,2) : '/';
                         //首冲ARPU
                         $obj -> newarpu = ($obj->newrechargeperson !=0 ) ? number_format($obj->newrecharge/$obj->newrechargeperson,2) : '/';
                         //付费率
@@ -161,9 +166,11 @@ Class complexDataService extends  Service {
                         $obj -> date = date('Y-m-d',$timepoint);
                         $list[] = $obj;
                 }
-
                 $currow++;
         }
+//        $endtime = microtime(true);
+//        $diff = ($endtime - $stime);
+//        error_log($diff);
         return $list;
     }
 
@@ -183,6 +190,8 @@ Class complexDataService extends  Service {
         $timePointCollection = timeTickArrayPoint($starttime,$endtime,60*60*24);
 
         $obj = new stdClass();
+        $maxonline = array();
+        $aveonline = array();
         foreach($timePointCollection as $timepoint){
                 foreach($servers as $server){
                     $this->connectServerDB($server);
@@ -198,7 +207,7 @@ Class complexDataService extends  Service {
                         ->get()->result_object() -> createnum;
 
 
-                    $obj -> loginnum  += $this->db->select("count(uid) as loginnum")
+                    $obj -> loginnum  += $this->db->select("count(distinct(uid)) as loginnum")
                         ->from($this->table_complex)
                         ->where(" $time = $timepoint and type=3")
                         ->get()->result_object() -> loginnum;
@@ -208,14 +217,16 @@ Class complexDataService extends  Service {
                     $ave = $this -> db->select("sum(param_nums) as aveonline,count(id) as times")
                         ->from($this->table_statistic)
                         ->where("$curtime = $timepoint and type = 1")
-                        ->get()->result_objects();
+                        ->get()->result_object();
 
-                    $obj -> aveonline += empty($ave->aveonline) ? 0 : ($ave->aveonline/$ave->times)>>0;
-                    $obj->maxonline += $this -> db->select("max(param_nums) as maxonline")
+                    $aveonline_temp = empty($ave->aveonline) ? 0 : ($ave->aveonline/$ave->times)>>0;
+                    $aveonline[] = $aveonline_temp;
+                    $maxonline_temp = $this -> db->select("max(param_nums) as maxonline")
                         ->from($this->table_statistic)
                         ->where("$curtime = $timepoint and type = 1")
                         ->get()->result_object()->maxonline;
 
+                    $maxonline[] = $maxonline_temp;
 
 
                     //充值元宝
@@ -240,31 +251,31 @@ Class complexDataService extends  Service {
                     //新增充值元宝
                     $obj -> newrecharge += $this ->db -> select ("sum(param1) as newrecharge")
                         ->from($this->table_complex)
-                        ->where(" $time = $timepoint and type=0 and uid not in (select distinct(uid) as uid from $this->table_complex where $time < $timepoint and type=0)")
+                        ->where(" $time = $timepoint and type=0 and uid in (select uid from $this->table_user where firstczdate = $timepoint)")
                         ->get()->result_object()->newrecharge;
 
                     //新增充值人数
                     $obj -> newrechargeperson += $this ->db -> select ("count(distinct(uid)) as newrechargeperson")
                         ->from($this->table_complex)
-                        ->where(" $time = $timepoint and type=0 and uid not in (select distinct(uid) as uid from $this->table_complex where $time < $timepoint and type =0)")
+                        ->where(" $time = $timepoint and type=0 and uid in (select uid from $this->table_user where firstczdate = $timepoint)")
                         ->get()->result_object()->newrechargeperson;
 
 
                     //老用户登录
-                    $obj -> oldlogin += $this -> db ->select("count(uid) as oldlogin")
+                    $obj -> oldlogin += $this -> db ->select("count(distinct(uid)) as oldlogin")
                         -> from($this->table_complex)
-                        -> where(" $time = $timepoint and type=3 and uid in (select distinct(uid) as uid from $this->table_complex where $time < $timepoint and type = 3)")
+                        -> where(" $time = $timepoint and type=3 and uid in (select  uid from $this->table_user where unix_timestamp(createdate) < $timepoint)")
                         -> get()->result_object()->oldlogin;
 
                     //老用户充值
                     $obj -> oldrecharge += $this ->db -> select ("sum(param1) as oldrecharge")
                         ->from($this->table_complex)
-                        ->where(" $time = $timepoint and type=0 and uid in (select distinct(uid) as uid from $this->table_complex where $time < $timepoint and type = 3)")
+                        ->where(" $time = $timepoint and type=0 and uid in (select  uid from $this->table_user where cz > 0 and type = 3)")
                         ->get()->result_object()->oldrecharge;
 
 
                     //消费元宝
-                    $obj -> consumption +=  $this->db->select("count(distinct(uid)) as consumption")
+                    $obj -> consumption +=  $this->db->select("sum(param1) as consumption")
                         ->from($this->table_complex)
                         ->where(" $time = $timepoint and type=4")
                         ->get()->result_object() -> consumption;
@@ -308,6 +319,9 @@ Class complexDataService extends  Service {
                     $obj->overyuanbao72 += count($overyuanbao72) > 0 ? $overyuanbao72[0]->overyuanbao72 : 0;
                 }
          }
+
+        $obj->maxonline = max($maxonline);
+        $obj->aveonline = $aveonline == 0 ? 0 :  number_format(array_sum($aveonline)/count($aveonline),2)>>0;
 
         //ARPU
         $obj -> arpu = ($obj->rechargeperson != 0) ? number_format($obj->recharge/$obj->rechargeperson,2) : '/';

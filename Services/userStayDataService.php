@@ -13,6 +13,7 @@ class UserStayDataService extends Service
         $this -> table_userStay = 'record';
         $this -> db = new DB;
         $this -> days = array('1','2','3','4','5','6','7','14','30');
+        DB::$debug = true;
     }
 
     public function lists($page,$condition){
@@ -32,7 +33,7 @@ class UserStayDataService extends Service
         $cur =0 ;
         $timePoints = array();
         foreach($_timePoints as $timepoint){
-            if($cur >= $page->start && $cur < ($page->limit/count($servers))>>0 )
+            if($cur >= $page->start && $cur < ($page->limit+$page->start) )
                 $timePoints [] = $timepoint;
             $cur++;
         }

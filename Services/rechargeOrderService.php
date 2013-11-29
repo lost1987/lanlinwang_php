@@ -42,7 +42,7 @@ class RechargeOrderService extends Service
         //排序
         for($i = 0 ; $i < count($list) ; $i++){
              for($k = count($list)-1 ; $k > $i ; $k--){
-                 if($list[$k] > $list[$i-1]){
+                 if($list[$k]->recharge_yuanbao > $list[$i-1]->recharge_yuanbao){
                      $temp = $list[$k];
                      $list[$k] = $list[$k-1];
                      $list[$k-1] = $temp;
@@ -67,7 +67,7 @@ class RechargeOrderService extends Service
                                                                     -> result_object() -> unrecharge_yuanbao;*/
                 $param -> unrecharge_yuanbao = 0;
 
-               //查询每个用户总消耗的元宝
+                //查询每个用户总消耗的元宝
                 $param -> used_yuanbao = $db_temp -> select("sum(param1) as used_yuanbao")
                     -> from($this->table_record)
                     -> where("type=4 and time > $starttime and time < $endtime")
