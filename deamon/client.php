@@ -1,4 +1,5 @@
 <?php
+exit;//现在已经不用这个了
 /**
  * Created by JetBrains PhpStorm.
  * User: lost

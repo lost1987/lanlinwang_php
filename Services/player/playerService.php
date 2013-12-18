@@ -103,10 +103,17 @@ class PlayerService extends  Service
             }else{
                 $timestamp = $this->db->timestamp('lastdate');
                 $now = time();
-                $templist = $this->db->select('uid,loginname,name')
-                    -> from($this->table_user)
-                    -> where("name like '%$loginname_or_name%' or loginname like '%$loginname_or_name% and $now-$timestamp < 60*10'")
-                    -> get() -> result_objects();
+                if(empty($loginname_or_name)){
+                    $templist = $this->db->select('uid,loginname,name')
+                        -> from($this->table_user)
+                        -> where("$now-$timestamp < 60*10 and $now-$timestamp > 0")
+                        -> get() -> result_objects();
+                }else{
+                    $templist = $this->db->select('uid,loginname,name')
+                        -> from($this->table_user)
+                        -> where("name like '%$loginname_or_name%' or loginname like '%$loginname_or_name%' and $now-$timestamp < 60*10 and $now-$timestamp > 0")
+                        -> get() -> result_objects();
+                }
             }
 
             foreach($templist as $temp){
